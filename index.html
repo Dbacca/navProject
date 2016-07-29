@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sliding Nav Bar</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="styles.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li class="drop-down"> <a href="#">Nav 3</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Nav 3.1</a></li>
+                    <li><a href="#">Nav 3.2</a></li>
+                    <li><a href="#">Nav 3.3</a></li>
+                    <li class="drop-down"> <a href="#">Nav 3.4</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 3.4.1</a></li>
+                            <li class="drop-down"> <a href="#">Nav 3.4.2</a>
+                                <ul sub-menu>
+                                    <li><a href="#">Nav 3.4.2.1</a></li>
+                                    <li><a href="#">Nav 3.4.2.2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Nav 4</a></li>
+        </ul>
+    </nav>
+    <script src="nav.js"></script>
+</body>
+
+</html>

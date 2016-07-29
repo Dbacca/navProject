@@ -1,0 +1,15 @@
+nav {
+    background-color: cornflowerblue;
+    padding: 10px o;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
