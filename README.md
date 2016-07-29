@@ -1,17 +1,21 @@
 # Navigation bar with jQuery dropdown menu and sub menu
 
-This is navigation bar with 3 levels of sub menus. 
+This is navigation bar with 3 levels of sub menus.
 
-![](img/navBar1.png)
 #### Nav bar fully collapsed
-![](img/navBar2.png)
+![](img/navBar1.png)
 #### 1st level sub menu on `:hover`
-![](img/navBar3.png)
+![](img/navBar2.png)
 #### 2nd level sub menu on `:hover`
-![](img/navBar4.png)
+![bo](img/navBar3.png)
 #### 3rd level sub meny on `:hover`
+![](img/navBar4.png)
+
+You can use this template to build a completely customized
 
 
+
+Overview of the HTML layout
 
 ``` html
 <li class="drop-down"> <a href="#">Products</a>
@@ -31,7 +35,7 @@ This is navigation bar with 3 levels of sub menus.
 ```
 
 
-
+jQuery event handler that slides down/up the  children of `.drop-down` with class of `.sub-menu`
 
 ``` javascript
 $(function () {
