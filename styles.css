@@ -1,6 +1,6 @@
 nav {
-    background-color: cornflowerblue;
-    padding: 10px o;
+    background-color: #16a085;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -12,4 +12,88 @@ nav ul {
 nav ul li {
     display: inline-block;
     position: relative;
+}
+
+
+/* sub navigation */
+
+nav li ul {
+    background-color: #1bc2a1;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    /* make this equal to the line-height of the links (specified below) */
+    width: 200px;
+}
+
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    /* make this equal to the width of the sub nav above */
+    margin: 0;
+}
+
+
+/* style all links */
+
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #16a085;
+}
+
+
+/* style sub level links */
+
+nav li li a {
+    border-bottom: solid 1px #16a085;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li li:last-child a {
+    border-bottom: none;
+}
+
+
+/* hide sub menu links */
+
+ul.sub-menu {
+    display: none;
+}
+
+
+/* show arrows for dropdowns */
+
+nav li.drop-down > a {
+    background-image: url('img/arrow-down.png');
+    background-position: right 20px;
+    background-repeat: no-repeat;
+}
+
+nav li li.drop-down > a {
+    background-image: url('img/arrow-right.png');
+    background-position: right 16px;
+    background-repeat: no-repeat;
 }
