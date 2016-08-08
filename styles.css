@@ -1,35 +1,42 @@
 nav {
-    background-color: #16a085;
     padding: 10px 0;
+
+    background-color: #16a085;
 }
 
 nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+
+    list-style-type: none;
 }
 
 nav ul li {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
 }
 
 
 /* sub navigation */
 
 nav li ul {
-    background-color: #1bc2a1;
     position: absolute;
-    left: 0;
     top: 40px;
+    left: 0;
     /* make this equal to the line-height of the links (specified below) */
+
     width: 200px;
+
+    background-color: #1bc2a1;
 }
 
 nav li li {
     position: relative;
-    margin: 0;
+
     display: block;
+
+    margin: 0;
 }
 
 nav li li ul {
@@ -37,6 +44,7 @@ nav li li ul {
     top: 0;
     left: 200px;
     /* make this equal to the width of the sub nav above */
+
     margin: 0;
 }
 
@@ -44,32 +52,36 @@ nav li li ul {
 /* style all links */
 
 nav a {
-    line-height: 40px;
-    padding: 0 12px;
     margin: 0 12px;
+    padding: 0 12px;
+
     font-family: sans-serif;
     font-size: 16px;
+    line-height: 40px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
     display: block;
+
+    text-decoration: none;
+
+    color: #fff;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-    color: #16a085;
+    color: #e67e22;
 }
 
 
 /* style sub level links */
 
 nav li li a {
-    border-bottom: solid 1px #16a085;
     margin: 0 10px;
     padding: 0;
+
+    border-bottom: solid 1px #16a085;
 }
 
 nav li li:last-child a {
@@ -88,12 +100,12 @@ ul.sub-menu {
 
 nav li.drop-down > a {
     background-image: url('img/arrow-down.png');
-    background-position: right 20px;
     background-repeat: no-repeat;
+    background-position: right 20px;
 }
 
 nav li li.drop-down > a {
     background-image: url('img/arrow-right.png');
-    background-position: right 16px;
     background-repeat: no-repeat;
+    background-position: right 16px;
 }
